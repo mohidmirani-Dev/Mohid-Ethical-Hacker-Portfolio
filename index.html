@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohid — Ethical Hacker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background: url("pic.jpg") center/cover no-repeat fixed;
+            color: #0f0;
+            overflow-x: hidden;
+        }
+
+        /* Dark overlay */
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.88);
+            z-index: -1;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 80px);
+            text-shadow: 0 0 15px #0f0, 0 0 30px #0f0, 0 0 45px #0f0;
+            margin-bottom: 25px;
+            animation: glow 2s infinite alternate;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #9f9;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border: 2px solid #0f0;
+            color: #0f0;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0f0;
+            color: #000;
+            box-shadow: 0 0 20px #0f0;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+            }
+
+            to {
+                text-shadow: 0 0 25px #0f0, 0 0 50px #0f0;
+            }
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 34px;
+            margin-bottom: 45px;
+            color: #0f0;
+            text-align: center;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .skill {
+            background: rgba(0, 25, 0, 0.9);
+            border: 1px solid #0f0;
+            padding: 45px 30px;
+            border-radius: 12px;
+            font-size: 20px;
+            text-align: center;
+            transition: 0.4s ease;
+        }
+
+        .skill:hover {
+            background: rgba(0, 40, 0, 0.95);
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 0 30px #0f0;
+        }
+
+        /* Services */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .service {
+            background: rgba(0, 15, 0, 0.9);
+            border: 1px solid #0f0;
+            padding: 55px 35px;
+            border-radius: 14px;
+            font-size: 18px;
+            transition: 0.4s ease;
+        }
+
+        .service:hover {
+            background: rgba(0, 50, 0, 0.95);
+            box-shadow: 0 0 35px #0f0;
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .service h3 {
+            margin-bottom: 22px;
+            color: #0f0;
+            font-size: 24px;
+            text-shadow: 0 0 8px #0f0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 22px;
+            font-size: 15px;
+            border-top: 1px solid #0f0;
+            margin-top: 40px;
+            color: #7f7;
+            background: rgba(0, 0, 0, 0.85);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Mohid — Ethical Hacker</h1>
+        <p>Vulnerability Assessment • Penetration Testing • Bug Bounty</p>
+        <a href="#skills" class="btn">Explore My Work</a>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Core Skills</h2>
+        <div class="skills">
+            <div class="skill">Vulnerability Assessment</div>
+            <div class="skill">Penetration Testing</div>
+            <div class="skill">Bug Bounty Hunting</div>
+            <div class="skill">Python Scripting</div>
+            <div class="skill">Security Audits</div>
+            <div class="skill">Python Programming (Tools & Automation)</div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Vulnerability Assessment</h3>
+                <p>Scanning and manual testing to identify weaknesses in applications & systems.</p>
+            </div>
+            <div class="service">
+                <h3>Penetration Testing</h3>
+                <p>Simulating real-world attacks with actionable remediation guidance.</p>
+            </div>
+            <div class="service">
+                <h3>Bug Bounty</h3>
+                <p>Finding and responsibly reporting security flaws in live platforms.</p>
+            </div>
+            <div class="service">
+                <h3>Security Audits</h3>
+                <p>Comprehensive audits with professional-grade reporting.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> Mohid — System Status: <span style="color:#0f0">Secure</span></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
